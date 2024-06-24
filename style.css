@@ -1,0 +1,109 @@
+body{
+    margin: 0%;
+    background-color: #ededda;
+}
+*{
+    font-family: math;
+    font-size: medium;
+}
+canvas{
+    background-color: white;
+    border: 2px solid grey;
+}
+nav{
+    background-color: #EBD0F9;
+}
+.lineaHorizontal{
+    border-bottom: solid #514747;
+    width: 100%;
+}
+ul{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    margin: 0%;
+    padding: 0%;
+}
+.botonSeleccionado{
+    background-color: #9B89A4;
+    color: whitesmoke;
+}
+li{
+    width: 100%;
+    list-style: none;
+    display: inline-flex;
+    justify-content: center;
+}
+.filtroSaturacion{
+    display: block;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    width: auto;
+    line-height: normal;
+}
+.filtroSaturacion p{
+    margin: 8%;
+    margin-bottom: 0%;
+    color: white;
+}
+button img{
+    width: 20%;
+}
+button p{
+    margin: 0%;
+}
+#botonClickSobreLapiz, #botonClickSobreGoma{
+    padding: 1%;
+}
+.divNoVisible, .divFiltros, .divGrosorGoma{
+    display: none;
+}
+.divFiltros, .divVisible{
+    background-color: rgb(64 44 65);
+}
+.divVisible label{
+    color: white;
+}
+.divFiltros button, .divVisible button{
+    margin: 2%;
+    border: 1px solid;
+    border-radius: 25px;
+}
+#colorSeleccionado, #grosorSeleccionado{
+    margin-bottom: 20%;
+}
+.divVisible{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5.2%;
+    line-height: 1%;
+    padding: 1%;
+    border: 2px solid gray;
+    border-radius: 5px;
+    width: 10%;
+}
+section{
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+}
+
+.divVisible label,input{
+    line-height: 150%;
+}
+button{
+    border: none;
+    width: 100%;
+    padding: 8%;
+    background-color:  #EBD0F9;
+
+}
+button:hover{
+    background-color: #9B89A4;
+    color: whitesmoke;
+}
+

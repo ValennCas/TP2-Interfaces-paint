@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entregable 2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <header>
+            <nav>
+                <ul>
+                    <li>
+                        <button type="button" id="botonClickSobreLapiz">
+                            <img src="imgs/lapiz.png" alt="Icono" title="Lápiz">
+                        </button>
+                        <ul class="divNoVisible">
+                            <li><label for="Color">Color:</label></li>
+                            <li><input type="color" name="Color" id="colorSeleccionado"></li>
+                            <li><label for="color">Grosor del lápiz:</label></li>
+                            <li><input type="range" name="Color" id="grosorSeleccionado" min="2" max="20"></li>
+                            <li><button type="submit" id="botonEnviarColor">Confirmar</button></li>
+                        </ul>
+                    </li>
+                    <li><button type="button" id="botonClickSobreGoma">
+                            <img src="imgs/gomaDeBorrar.webp" alt="gomaDeBorrar" title="goma de borrar">
+                        </button>
+                        <ul class="divGrosorGoma">
+                            <li><label for="color">Grosor de la goma:</label></li>
+                            <li><input type="range" name="Color" id="grosorSeleccionadoGoma" min="2" max="20"></li>
+                            <li><button type="submit" id="botonEnviarGrosorGoma">Confirmar</button></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <button id="cargarCanvasVacio">Limpiar canvas</button>
+                    </li>
+                    <li>
+                        <button type="button" id="cargarCanvasConImagen">
+                            <p>Subir imagen</p>
+                        </button>
+                    </li>
+                    <li>
+                        <button type="button" id="guardarImagen">Guardar imagen</button>
+                    </li>
+                    <li>
+                        <button type="button" id="botonFiltros">Filtros</button>
+                        <ul class="divFiltros">
+                            <li><button type="button" id="filtroNegativo">Filtro negativo</button></li>
+                            <li><button type="button" id="filtroBrillo">Filtro brillo</button></li>
+                            <li><button type="button" id="filtroEscalaDeGrises">Filtro escala de grises</button></li>
+                            <li><button type="button" id="filtroBinarizacion">Filtro binarización</button></li>
+                            <li><button type="button" id="filtroSepia">Filtro sepia</button></li>
+                            <ul class="filtroSaturacion">
+                                <li><p>Ingresar valor de saturación:</p></li>
+                                <li><input type="range" name="filtroSaturacion" id="saturacionElegida" min="-50" max="50"></li>
+                                <li><button type="button" id="filtroSaturacion">Filtro saturación</button></li>
+                            </ul>
+                            <li><button type="button" id="filtroDeteccionDeBordes">Filtro detección de bordes</button></li>
+                            <li><button type="button" id="filtroBlur">Desenfocar</button></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <dialog id="miDialogo">
+                <input type="file" name="file" id="imagenCargada">
+            </dialog>
+            <div class="lineaHorizontal"></div>
+        </header>
+        <section>
+            <canvas id="miCanvas" width = "700" height = "500"></canvas>
+        </section>
+    </main>
+</body>
+<script src="js/pen.js"></script>
+<script src="js/rubber.js"></script>
+<script src="js/imagen.js"></script>
+<script src="js/filtros/filtro.js"></script>
+<script src="js/filtros/filtroBrillo.js"></script>
+<script src="js/filtros/filtroNegativo.js"></script>
+<script src="js/filtros/filtroBinarizacion.js"></script>
+<script src="js/filtros/filtroEscalaDeGrises.js"></script>
+<script src="js/filtros/filtroSepia.js"></script>
+<script src="js/filtros/filtroSaturacion.js"></script>
+<script src="js/filtros/filtroDeteccionDeBordes.js"></script>
+<script src="js/filtros/filtroBlur.js"></script>
+<script src="js/main.js"></script>
+</html>
